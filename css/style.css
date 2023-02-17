@@ -48,7 +48,9 @@ body {
 }
 
 .hero-container {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: url('https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?cs=srgb&dl=pexels-luis-gomes-546819.jpg&fm=jpg') center center no-repeat;
     background-size: cover;
     height: 80vh;
@@ -57,8 +59,9 @@ body {
 }
 
 .hero-content {
+    background-color: rgba(53, 53, 116, 0.801);
     width: 100%;
-    max-width: 1000px;
+    /*max-width: 1000px;*/
     text-align: center;
     padding: 24px;
     margin: 0 auto;
@@ -81,6 +84,39 @@ body {
     justify-content: center;
     align-items: center;
     padding: 12px;
+}
+
+.contactme-container {
+    background: #5f6278;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px 20px 0px;
+}
+
+.contactme-content {
+    color: #F1F1F1;
+    padding: 12px 0 12px 0;
+    text-align: center;
+
+}
+ul#contactlist{
+    color: #F1F1F1;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+ul#contactlist li{
+    padding-right: 50px;
+    text-align: justify;
+    font-size: larger;
+}
+
+ul#contactlist li a{
+    color: #F1F1F1;
 }
 
 .projects-container {
@@ -178,9 +214,9 @@ a:hover, a:active {
     border: 2px solid #333333;
 }
 .hero-content .btn:hover, .hero-content .btn:active {
-    background: #333333;
+    background: #74b44a;
     color: #F1F1F1;
-    border: 2px solid #666666;
+    border: 2px solid #74b44a;
 }
 
 .btn, .btn:visited  {
